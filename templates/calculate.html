@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block content %}
+  <h3>Dinheiro investido: R$ {{ money }}</h3>
+  <h4>Quantidade de Jogos: {{games_quantity}}</h4>
+  
+  <p><br></p>
+
+  <h5>Jogos gerados:</h5>
+  
+  <ol>
+    {% for game in games %}
+      <li>{{ game }}</li>
+    {% endfor %}
+  </ol>
+
+  <p><br></p>
+{% endblock %}

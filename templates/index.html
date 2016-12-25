@@ -28,12 +28,19 @@
     <p><br></p>
 
     <p>
-      <form>
+      <form name="form_calculate" action="/calculate" method="POST">
         <label for="money">Dinheiro:</label>
         <br>
-        <input type="number" id="money" required placeholder="Digite o montante">
+        <input type="number" id="money" name="money" required placeholder="Digite o montante">
+        <br><br>
+        <input type="submit" value="Calcular">
       </form>
     </p>
+    <p><br></p>    
+
+    <div>
+      {% block content %}{% endblock %}
+    </div>
 
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
