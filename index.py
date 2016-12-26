@@ -34,5 +34,4 @@ def calculate():
   return render_template('calculate.html', money=money, games_quantity=games_quantity, games=games)
 
 if __name__ == '__main__':
-  app.debug = True
   app.run()
