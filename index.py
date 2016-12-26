@@ -11,7 +11,7 @@ def index():
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
-  megasena_expense = 3.00
+  megasena_expense = 3.50
 
   money = float(request.form['money'])
 
